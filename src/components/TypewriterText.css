@@ -1,0 +1,14 @@
+.typewriter-text {
+  display: inline-block;
+  border-right: 2px solid var(--primary-color);
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--primary-color);
+  }
+} 
