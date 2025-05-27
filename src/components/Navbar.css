@@ -36,6 +36,15 @@
   margin: 0;
 }
 
+.nav-item .boton {
+  width: 140px;
+  justify-content: center;
+}
+
+.nav-item .fondo-negro {
+  width: 140px;
+}
+
 .nav-link {
   color: inherit !important;
   padding: 0;
