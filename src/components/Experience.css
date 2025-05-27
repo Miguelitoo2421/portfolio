@@ -1,0 +1,134 @@
+.experience {
+  padding: var(--section-padding);
+  background-color: var(--background-color);
+}
+
+.experience-section {
+  padding: var(--section-padding);
+  background: #f8fafc;
+}
+
+.experience-section h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.40);
+}
+
+.experience-title {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+}
+
+.experience-columns {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-column {
+  flex: 1;
+}
+
+.column-title {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.exp-card {
+  display: flex;
+  align-items: center;
+  background: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+  margin-bottom: 2rem;
+  padding: 1.2rem 1.5rem;
+  gap: 1.5rem;
+  min-height: 90px;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.exp-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.exp-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.exp-main {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.exp-sub {
+  font-weight: 500;
+  color: #e5e7eb;
+  font-size: 1rem;
+}
+
+.exp-date {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+}
+
+.exp-grid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.exp-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.exp-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.exp-grid-1 {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+@media (max-width: 900px) {
+  .experience-columns {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .experience-column {
+    width: 100%;
+  }
+  .exp-grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .exp-grid-2 {
+    grid-template-columns: 1fr;
+  }
+} 
